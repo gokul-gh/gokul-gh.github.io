@@ -1,0 +1,38 @@
+#parentDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#boxParent {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  margin: 10% auto auto 40%;
+}
+
+.box {
+  border: 1px black solid;
+  padding: 10px;
+  font-size: 36px;
+  text-align: center;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+#reset {
+  width: 5rem;
+  height: 2rem;
+  background-color: rgba(177, 177, 240, 0.842);
+  color: black;
+  border: none;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+#reset:hover {
+  background-color: rgba(58, 58, 221, 0.63);
+}
