@@ -1,5 +1,5 @@
 body {
-  background-image: url(/Images/uno_background_image.jpg);
+  background-image: url(./Images/uno_background_image.jpg);
 }
 
 #cardsDeckId {
@@ -83,6 +83,7 @@ body {
 .upperNoDivId {
   font-size: 1.4rem;
   padding: 0 0rem;
+  text-shadow: 0 0 2px #000;
 }
 
 .middleNoDivId {
@@ -105,12 +106,13 @@ body {
   padding: 0rem 0rem 0.2rem 0rem;
   font-size: 1.4rem;
   transform: rotate(-180deg);
+  text-shadow: 0 0 2px #000;
 }
 
 .unoCardImage {
   height: 23vh;
   width: 15vh;
-  content: url("Images/UNO_back.png");
+  content: url("./Images/UNO_back.png");
 }
 
 .playPass {
