@@ -1,21 +1,193 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <a href="/qr-code-component-main/index.html"> frontend mentor qr code </a>
-    <br />
-    <br />
-    <p>Projects done in Soft Tech Ashram</p>
-    <ul>
-    <li><a href="/amazonWebsite/CC04_Amazon_Website.html">Amazon website copy</a></li>
-    <li><a href="/businessWebsite/businessWebsite.html">Busines Website</a></li>
-    <li><a href="/travelform/travelform.html">Travel Form</a></li>
-  </ul>
+    <nav>
+      <ul id="navLinksId">
+        <li>
+          <a href="#aboutId"> <i class="fa-solid fa-house fa-sm"></i> Home </a>
+        </li>
+        <li>
+          <a href="#projectsId"
+            ><i class="fa-solid fa-briefcase fa-sm"></i> Projects</a
+          >
+        </li>
+        <li>
+          <a href="#contactId"
+            ><i class="fa-solid fa-address-card"></i> Contact</a
+          >
+        </li>
+        <li>
+          <a href="./Gokul-b-Resume.pdf">
+            <i class="fa-solid fa-file"></i> Resume
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-  <a href="cypress-errors.html"> Cypress errors </a>
+    <div id="content">
+      <div id="aboutId">
+        <h1>About me</h1>
+        <p>
+          I'm Gokul. I have basic knowledge on web technology.
+          <br />
+          Currently I'm learning react.
+        </p>
+      </div>
+      <div id="mySkills">
+        <h1>My skills</h1>
+        <div id="skillsListId">
+          <p>
+            <i class="fa-brands fa-html5 fa-lg" style="color: #f46113"></i> HTML
+          </p>
+          <p>
+            <i class="fa-brands fa-css3-alt fa-lg" style="color: #2f8cd7"></i>
+            CSS
+          </p>
+          <p>
+            <i class="fa-brands fa-js fa-lg" style="color: #f3f200"></i>
+            JavaScript
+          </p>
+          <p>
+            <img src="./Images/rails-svgrepo-com.svg" alt="Rails icon" />Ruby on
+            Rails
+          </p>
+        </div>
+      </div>
+      <!-- <div><h1>My timeline</h1></div> -->
+      <div id="projectsId">
+        <h1>Projects</h1>
+        <div>
+          <div class="projectsClass">
+            <img
+              src="./Images/amazon_website_copy.png"
+              alt="Amazon website copy Image"
+            />
+            <p>Amazon website copy</p>
+            <div><span>HTML</span> <span>CSS</span></div>
+            <div id="viewCode">
+              <span>
+                <a href="./amazonWebsite/CC04_Amazon_Website.html" target="_blank">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+              </span>
+              <span>
+                <a href="https://github.com/gokul-gh/softTech/tree/main/css/challenges/7_responsive_design" target="_blank">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View project
+                </a>
+              </span>
+            </div>
+          </div>
+          <div class="projectsClass">
+            <img
+              src="./Images/business_website.png"
+              alt="Business Website Image"
+            />
+            <p>Business website</p>
+            <div><span>HTML</span> <span>CSS</span></div>
+            <div id="viewCode">
+              <span>
+                <a href="./businessWebsite/businessWebsite.html" target="_blank">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+              </span>
+              <span>
+                <a href="https://github.com/gokul-gh/softTech/tree/main/css/challenges/business_website" target="_blank">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View project
+                </a>
+              </span>
+            </div>
+          </div>
+          <div class="projectsClass">
+            <img
+              src="./Images/travel_booking_form.png"
+              alt="Travel Booking Form"
+            />
+            <p>Travel Booking Form</p>
+            <div><span>HTML</span> <span>CSS</span></div>
+            <div id="viewCode">
+              <span>
+                <a href="./travelform/travelform.html" target="_blank">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+              </span>
+              <span>
+                <a href="https://github.com/gokul-gh/softTech/tree/main/css/challenges/3_travel_booking_form_with_css" target="_blank">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View project
+                </a>
+              </span>
+            </div>
+          </div>
+          <div class="projectsClass">
+            <img src="./Images/tic_tac_toe.png" alt="Tic Tac Toe Image" />
+            <p>Tic Tac Toe</p>
+            <div><span>HTML</span> <span>CSS</span> <span>JS</span></div>
+            <div id="viewCode">
+              <span>
+                <a href="./tic-tac-toe/game.html" target="_blank">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+              </span>
+              <span>
+                <a href="https://github.com/gokul-gh/softTech/tree/main/tic-tac-toe" target="_blank">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View project
+                </a>
+              </span>
+            </div>
+          </div>
+          <div class="projectsClass">
+            <img src="./Images/uno_game.png" alt="Uno Game Image" />
+            <p>Uno Game</p>
+            <div><span>HTML</span> <span>CSS</span> <span>JS</span></div>
+            <!-- <p>For later; description</p> -->
+            <div id="viewCode">
+              <span>
+                <a href="./uno/game.html" target="_blank">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+              </span>
+              <span>
+                <a href="https://github.com/gokul-gh/softTech/tree/main/uno" target="_blank">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View project
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contactId">
+        <h1>Contact</h1>
+        <a href="mailto:nkl.gokulb@gmail.com" target="_blank">
+          <div>
+              <i class="fa-solid fa-envelope"></i>
+              Email: nkl.gokulb@gmail.com
+          </div>
+        </a>
+        <a href="https://github.com/gokul-gh" target="_blank">
+          <div>
+            <i class="fa-brands fa-github"></i>
+            Github: gokul-gh
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/gokul-b-716029229/" target="_blank">
+          <div>
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn: gokul-b-716029229
+          </div>
+        </a>
+      </div>
+    </div>
   </body>
 </html>
