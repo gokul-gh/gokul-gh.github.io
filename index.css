@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  background: linear-gradient(45deg, #eee7e7, #ededf5);
+}
+
+/* Apply styles to navigation links */
+nav ul {
+  align-items: center;
+  background-color: #d3d2d2;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+}
+
+nav li {
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: rgb(141, 0, 0);
+}
+
+nav li:hover {
+  cursor: pointer;
+  background-color: #bbb5b5;
+}
+
+#content {
+  margin: auto;
+  padding-top: 80px;
+  width: 90%;
+}
+
+#aboutId {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+#aboutId > p {
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+#mySkills {
+  padding-top: 5rem;
+}
+
+div > h1 {
+  text-align: center;
+}
+
+#skillsListId {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+  margin: auto;
+  font-size: 1.6rem;
+}
+
+#skillsListId img {
+  width: 35px;
+  vertical-align: middle;
+}
+
+#skillsListId i,
+img {
+  padding-right: 1rem;
+}
+
+#skillsListId p {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 8px;
+  padding: 2rem 1rem;
+  width: 80%;
+  text-align: center;
+}
+
+#projectsId {
+  margin: 5rem auto auto;
+  width: 80%;
+}
+
+#projectsId img {
+  width: 80%;
+  margin-top: 2rem;
+}
+
+#projectsId > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.projectsClass {
+  background-color: #fff;
+  border-radius: 5px;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.projectsClass > p,
+.projectsClass > div {
+  text-align: left;
+  padding-left: 3rem;
+}
+
+.projectsClass > p:first-of-type {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.projectsClass span {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 7px;
+}
+
+.projectsClass div {
+  margin: 20px 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#viewCode{
+  padding-left: 2.7rem;
+}
+
+#viewCode span {
+  font-size: 18px;
+  text-decoration: none;
+  margin: 6px;
+}
+
+#viewCode span:hover {
+  cursor: pointer;
+  background-color: #414141;
+}
+
+#viewCode a {
+  text-decoration: none;
+  color: white;
+}
+
+#contactId {
+  margin: 5rem auto;
+}
+
+#contactId div {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 20px auto;
+  font-size: 20px;
+  text-align: center;
+  width: 40%;
+  padding: 20px 0rem;
+}
+
+#contactId a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
