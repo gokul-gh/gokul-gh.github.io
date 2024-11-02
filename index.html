@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <title></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -12,180 +11,277 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./output.css" type="text/css" media="screen" />
   </head>
   <body>
-    <nav>
-      <ul id="navLinksId">
-        <li>
-          <a href="#aboutId"> <i class="fa-solid fa-house fa-sm"></i> Home </a>
-        </li>
-        <li>
-          <a href="#projectsId"
-            ><i class="fa-solid fa-briefcase fa-sm"></i> Projects</a
+    <div class="navbar bg-blue-300 fixed p-0">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost sm:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow sm:hidden"
           >
-        </li>
-        <li>
-          <a href="#contactId"
-            ><i class="fa-solid fa-address-card"></i> Contact</a
-          >
-        </li>
-        <li>
-          <a href="./Gokul-b-Resume.pdf">
-            <i class="fa-solid fa-file"></i> Resume
-          </a>
-        </li>
-      </ul>
-    </nav>
+            <li class="p-2"><a class="p-2" href="#aboutId">About Me</a></li>
+            <li class="p-2"><a class="p-2" href="#skillsId">My Skills</a></li>
+            <li class="p-2"><a class="p-2" href="#projectsId">Projects</a></li>
+            <li class="p-2"><a class="p-2" href="#contactId">Contact</a></li>
+            <li class="p-2">
+              <a class="p-2" href="./Gokul-b-Resume.pdf">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center">
+        <div
+          class="hidden sm:flex menu menu-horizontal bg-base-200 rounded-box sm:font-semibold sm:text-base"
+        >
+          <li><a href="#aboutId">About Me</a></li>
+          <li><a href="#skillsId">My Skills</a></li>
+          <li><a href="#projectsId">Projects</a></li>
+          <li><a href="#contactId">Contact</a></li>
+          <li><a href="./Gokul-b-Resume.pdf">Resume</a></li>
+        </div>
+      </div>
+      <div class="navbar-end"></div>
+    </div>
 
-    <div id="content">
-      <div id="aboutId">
-        <h1>About me</h1>
+    <div class="bg-blue-100 pb-10">
+      <div id="aboutId" class="text-center pt-20 w-11/12 m-auto">
+        <h2 class="text-2xl font-bold my-2">About me</h2>
         <p>
           I'm Gokul. I have basic knowledge on web technology.
           <br />
           Currently I'm learning react.
         </p>
       </div>
-      <div id="mySkills">
-        <h1>My skills</h1>
-        <div id="skillsListId">
-          <p>
+
+      <div id="skillsId" class="py-8"></div>
+      <div id="" class="text-center">
+        <h2 class="text-2xl font-bold my-2">My Skills</h2>
+        <div
+          class="flex flex-col gap-y-5 w-8/12 m-auto mt-4 sm:flex-row sm:flex-wrap sm:gap-5 sm:justify-center"
+        >
+          <p class="bg-base-100 p-2 sm:basis-2/5">
             <i class="fa-brands fa-html5 fa-lg" style="color: #f46113"></i> HTML
           </p>
-          <p>
+          <p class="bg-base-100 p-2 sm:basis-2/5">
             <i class="fa-brands fa-css3-alt fa-lg" style="color: #2f8cd7"></i>
             CSS
           </p>
-          <p>
+          <p class="bg-base-100 p-2 sm:basis-2/5">
             <i class="fa-brands fa-js fa-lg" style="color: #f3f200"></i>
             JavaScript
           </p>
-          <p>
-            <img src="./Images/rails-svgrepo-com.svg" alt="Rails icon" />Ruby on
-            Rails
+          <p class="bg-base-100 p-2 sm:basis-2/5">
+            <img
+              src="./assets/svg/rails-svgrepo-com.svg"
+              alt="Rails icon"
+              class="h-6 inline"
+            />
+            Ruby on Rails
           </p>
         </div>
       </div>
-      <!-- <div><h1>My timeline</h1></div> -->
-      <div id="projectsId">
-        <h1>Projects</h1>
-        <div>
-          <div class="projectsClass">
-            <img
-              src="./Images/amazon_website_copy.png"
-              alt="Amazon website copy Image"
-            />
-            <p>Amazon website copy</p>
-            <div><span>HTML</span> <span>CSS</span></div>
-            <div id="viewCode">
-              <span>
-                <a href="https://github.com/gokul-gh/softTech/tree/main/css/challenges/7_responsive_design" target="_blank">
-                  <i class="fa-brands fa-github"></i> View Code
-                </a>
-              </span>
-              <span>
-                <a href="./amazonWebsite/CC04_Amazon_Website.html" target="_blank">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View project
-                </a>
-              </span>
+
+      <div id="projectsId" class="py-10"></div>
+      <h2 class="text-2xl font-bold my-2 text-center mb-10">Projects</h2>
+
+      <div
+        class="w-10/12 flex flex-col gap-10 m-auto sm:flex-row sm:flex-wrap sm:justify-center sm:gap-15"
+      >
+        <div class="card bg-base-100 shadow-xl sm:basis-2/5">
+          <figure>
+            <img src="./assets/images/uno_game.png" alt="UNO Game" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">UNO Game</h2>
+            <div class="card-actions">
+              <div class="badge badge-neutral">HTMl</div>
+              <div class="badge badge-neutral">CSS</div>
+              <div class="badge badge-neutral">JS</div>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://github.com/gokul-gh/softTech/tree/main/uno"
+                target="_blank"
+                class="btn"
+              >
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+              <a
+                href="./assets/projects/uno/game.html"
+                target="_blank"
+                class="btn"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> View
+                project
+              </a>
             </div>
           </div>
-          <div class="projectsClass">
-            <img
-              src="./Images/business_website.png"
-              alt="Business Website Image"
-            />
-            <p>Business website</p>
-            <div><span>HTML</span> <span>CSS</span></div>
-            <div id="viewCode">
-              <span>
-                <a href="https://github.com/gokul-gh/softTech/tree/main/css/challenges/business_website" target="_blank">
-                  <i class="fa-brands fa-github"></i> View Code
-                </a>
-              </span>
-              <span>
-                <a href="./businessWebsite/businessWebsite.html" target="_blank">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View project
-                </a>
-              </span>
+        </div>
+
+        <div class="card bg-base-100 shadow-xl sm:basis-2/5">
+          <figure>
+            <img src="./assets/images/tic_tac_toe.png" alt="Tic Tac Toe" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Tic Tac Toe</h2>
+            <div class="card-actions">
+              <div class="badge badge-neutral">HTMl</div>
+              <div class="badge badge-neutral">CSS</div>
+              <div class="badge badge-neutral">JS</div>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://github.com/gokul-gh/softTech/tree/main/tic-tac-toe"
+                target="_blank"
+                class="btn"
+              >
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+              <a
+                href="./assets/projects/tic-tac-toe/game.html"
+                target="_blank"
+                class="btn"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> View
+                project
+              </a>
             </div>
           </div>
-          <div class="projectsClass">
+        </div>
+
+        <div class="card bg-base-100 shadow-xl sm:basis-2/5">
+          <figure class="h-11/12">
             <img
-              src="./Images/travel_booking_form.png"
+              src="./assets/images/amazon_website_copy.png"
+              alt="Amazos website copy"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Amazon website copy</h2>
+            <div class="card-actions">
+              <div class="badge badge-neutral">HTMl</div>
+              <div class="badge badge-neutral">CSS</div>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://github.com/gokul-gh/softTech/tree/main/css/challenges/7_responsive_design"
+                target="_blank"
+                class="btn"
+              >
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+              <a
+                href="./assets/projects/amazonWebsite/CC04_Amazon_Website.html"
+                target="_blank"
+                class="btn"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> View
+                project
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-xl sm:basis-2/5">
+          <figure>
+            <img
+              src="./assets/images/business_website.png"
+              alt="Business website copy"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Business website copy</h2>
+            <div class="card-actions">
+              <div class="badge badge-neutral">HTMl</div>
+              <div class="badge badge-neutral">CSS</div>
+            </div>
+            <div class="card-actions">
+              <a
+                href="https://github.com/gokul-gh/softTech/tree/main/css/challenges/business_website"
+                target="_blank"
+                class="btn"
+              >
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+              <a
+                href="./assets/projects/businessWebsite/businessWebsite.html"
+                target="_blank"
+                class="btn"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> View
+                project
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-xl sm:basis-2/5">
+          <figure>
+            <img
+              src="./assets/images/travel_booking_form.png"
               alt="Travel Booking Form"
             />
-            <p>Travel Booking Form</p>
-            <div><span>HTML</span> <span>CSS</span></div>
-            <div id="viewCode">
-              <span>
-                <a href="https://github.com/gokul-gh/softTech/tree/main/css/challenges/3_travel_booking_form_with_css" target="_blank">
-                  <i class="fa-brands fa-github"></i> View Code
-                </a>
-              </span>
-              <span>
-                <a href="./travelform/travelform.html" target="_blank">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View project
-                </a>
-              </span>
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Travel Booking Form</h2>
+            <div class="card-actions">
+              <div class="badge badge-neutral">HTMl</div>
+              <div class="badge badge-neutral">CSS</div>
             </div>
-          </div>
-          <div class="projectsClass">
-            <img src="./Images/tic_tac_toe.png" alt="Tic Tac Toe Image" />
-            <p>Tic Tac Toe</p>
-            <div><span>HTML</span> <span>CSS</span> <span>JS</span></div>
-            <div id="viewCode">
-              <span>
-                <a href="https://github.com/gokul-gh/softTech/tree/main/tic-tac-toe" target="_blank">
-                  <i class="fa-brands fa-github"></i> View Code
-                </a>
-              </span>
-              <span>
-                <a href="./tic-tac-toe/game.html" target="_blank">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View project
-                </a>
-              </span>
-            </div>
-          </div>
-          <div class="projectsClass">
-            <img src="./Images/uno_game.png" alt="Uno Game Image" />
-            <p>Uno Game</p>
-            <div><span>HTML</span> <span>CSS</span> <span>JS</span></div>
-            <!-- <p>For later; description</p> -->
-            <div id="viewCode">
-              <span>
-                <a href="https://github.com/gokul-gh/softTech/tree/main/uno" target="_blank">
-                  <i class="fa-brands fa-github"></i> View Code
-                </a>
-              </span>
-              <span>
-                <a href="./uno/game.html" target="_blank">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View project
-                </a>
-              </span>
+            <div class="card-actions">
+              <a
+                href="https://github.com/gokul-gh/softTech/tree/main/css/challenges/3_travel_booking_form_with_css"
+                target="_blank"
+                class="btn"
+              >
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+              <a
+                href="./assets/projects/travelform/travelform.html"
+                target="_blank"
+                class="btn"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> View
+                project
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div id="contactId">
-        <h1>Contact</h1>
-        <a href="mailto:nkl.gokulb@gmail.com" target="_blank">
-          <div>
-              <i class="fa-solid fa-envelope"></i>
-              Email: nkl.gokulb@gmail.com
-          </div>
+
+      <h2 class="text-2xl font-bold my-8 text-center">Contact</h2>
+      <div
+        id="contactId"
+        class="flex flex-col gap-4 w-11/12 m-auto pb-20 sm:w-1/2"
+      >
+        <a
+          href="mailto:nkl.gokulb@gmail.com"
+          target="_blank"
+          class="btn pt-4 pb-6 bg-base-100"
+        >
+          <i class="fa-solid fa-envelope"></i>
+          Email: nkl.gokulb@gmail.com
         </a>
-        <a href="https://github.com/gokul-gh" target="_blank">
-          <div>
-            <i class="fa-brands fa-github"></i>
-            Github: gokul-gh
-          </div>
+        <a
+          href="https://github.com/gokul-gh"
+          target="_blank"
+          class="btn pt-4 pb-6 bg-base-100"
+        >
+          <i class="fa-brands fa-github"></i>
+          Github: gokul-gh
         </a>
-        <a href="https://www.linkedin.com/in/gokul-b-716029229/" target="_blank">
-          <div>
-            <i class="fa-brands fa-linkedin"></i>
-            LinkedIn: gokul-b-716029229
-          </div>
+        <a
+          href="https://www.linkedin.com/in/gokul-b-716029229/"
+          target="_blank"
+          class="btn pt-4 pb-6 bg-base-100"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          LinkedIn: gokul-b-716029229
         </a>
       </div>
     </div>

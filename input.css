@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply h-8 min-h-8;
+}
+
+.card {
+    @apply static;
+}
+
+.menu {
+    @apply p-0;
+}
