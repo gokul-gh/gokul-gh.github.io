@@ -1,0 +1,19 @@
+#+title: Readme
+
+* About
+- This is the code of my [[https://gokul-gh.github.io/][personal website]].
+- daisyui and tailwindcss are used for styling.  Earlier this used to be plain [[https://github.com/gokul-gh/gokul-gh.github.io/tree/68d32be32110bce16acdea656106442c5c715ff0][html and css]].
+
+* Development setup
+Firstly, check installation of Node.js. (I would recommend [[https://asdf-vm.com/][asdf plugin manager]] for installation as it can install multiple version of multiple languages in $HOME directory)
+
+Clone the repository
+=https://github.com/gokul-gh/gokul-gh.github.io.git=
+
+Install the necessary dependencies
+~bun install~
+
+Run the tailwind build process
+=bunx tailwindcss -i ./src/input.css -o ./src/output.css --watch=
+
+This should make my website run in your local environment.  If faced with any troubles, please refer to the respective documentation.
