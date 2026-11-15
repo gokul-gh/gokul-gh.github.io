@@ -3,7 +3,6 @@ title: College Management Application
 status: Internal company project
 tech: [Java, React, Spring Boot]
 description: Developed a college management system using reusable React components and Java Spring Boot for managing students, staff, and academic operations.
-image: /assets/images/business_website.png
 date: 2025
 ---
 

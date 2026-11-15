@@ -3,7 +3,6 @@ title: Marek Foundation Admin & Mobile App
 status: Internal company project
 tech: [React, Spring Boot, Moodle]
 description: Developed an LMS platform where administrators manage sites, coordinators, and student activity, while students access learning content and complete assessments through a mobile application. The platform integrates with Moodle as the LMS backend.
-image: /assets/images/tic_tac_toe.png
 date: 2025
 ---
 

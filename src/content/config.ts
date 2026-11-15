@@ -7,7 +7,6 @@ const projects = defineCollection({
     status: z.string().default('Internal company project'),
     tech: z.array(z.string()).default([]),
     description: z.string(),
-    image: z.string().optional(),
     date: z.union([z.string(), z.number()]).optional(),
   }),
 });

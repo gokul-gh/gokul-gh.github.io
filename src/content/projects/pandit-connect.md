@@ -3,7 +3,6 @@ title: Pandit Connect Web Application
 status: Internal company project
 tech: [React, Spring Boot]
 description: Built a Progressive Web Application (PWA) using React and Spring Boot for connecting users with pandit services and online bookings.
-image: /assets/images/e-commerce_website.png
 date: 2025
 ---
 
