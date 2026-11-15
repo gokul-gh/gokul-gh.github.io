@@ -112,4 +112,6 @@ const navLinks = [
   document.getElementById('theme-toggle')?.addEventListener('click', () => {
     setTimeout(updateThemeIcon, 0);
   });
+  // Keep icon in sync when system theme changes
+  window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', updateThemeIcon);
 </script>

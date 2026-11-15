@@ -38,6 +38,16 @@ const { title = 'Gokul — Software Developer', description = 'Portfolio of Goku
         document.documentElement.setAttribute('data-theme', theme);
       })();
 
+      // Keep in sync when system theme changes (only if user hasn't manually chosen)
+      (function () {
+        const mq = window.matchMedia('(prefers-color-scheme: light)');
+        mq.addEventListener('change', (e) => {
+          if (localStorage.getItem('theme')) return; // user has explicit preference
+          const theme = e.matches ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', theme);
+        });
+      })();
+
       document.addEventListener('DOMContentLoaded', () => {
         // Mobile menu toggle
         const menuToggle = document.getElementById('menu-toggle');
