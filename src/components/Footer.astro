@@ -13,24 +13,24 @@ const iconPaths = {
 };
 ---
 
-<footer class="bg-dark-950 border-t border-dark-800">
+<footer class="border-t" style="background-color: var(--surface); border-color: var(--border);">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <div class="flex flex-col md:flex-row items-center justify-between gap-6">
       <div class="flex items-center gap-2 text-lg font-bold tracking-tight">
         <span class="gradient-text">G</span>
-        <span>Gokul</span>
+        <span style="color: var(--text);">Gokul</span>
       </div>
 
       <a
         href="/Gokul-Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        class="px-4 py-2 rounded-lg border border-primary-600 text-primary-300 hover:bg-primary-600/20 hover:text-white transition-colors duration-200"
+        class="px-4 py-2 rounded-lg border border-primary-600 text-primary-400 hover:bg-primary-600/20 transition-colors duration-200"
       >
         Download Resume
       </a>
 
-      <p class="text-dark-500 text-sm">
+      <p class="text-sm" style="color: var(--text-muted);">
         © {currentYear} Gokul. Built with Astro & Tailwind CSS.
       </p>
 
@@ -40,7 +40,8 @@ const iconPaths = {
             href={social.href}
             target={social.href.startsWith('http') ? '_blank' : undefined}
             rel={social.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-            class="flex items-center gap-2 text-dark-400 hover:text-primary-400 transition-colors duration-200"
+            class="flex items-center gap-2 transition-colors duration-200 hover:opacity-80"
+            style="color: var(--text-muted);"
             aria-label={social.label}
           >
             <span set:html={iconPaths[social.icon]}></span>

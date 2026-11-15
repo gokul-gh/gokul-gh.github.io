@@ -25,22 +25,42 @@ const { title = 'Gokul — Software Developer', description = 'Portfolio of Goku
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <script is:inline>
-      // Mobile menu toggle
+      // Theme detection - run before paint to avoid FOUC
+      (function () {
+        const stored = localStorage.getItem('theme');
+        const preferred = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        const theme = stored || preferred;
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+
       document.addEventListener('DOMContentLoaded', () => {
+        // Mobile menu toggle
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
         menuToggle?.addEventListener('click', () => {
           mobileMenu?.classList.toggle('hidden');
         });
-        // Close menu on link click
         mobileMenu?.querySelectorAll('a').forEach((a) => {
           a.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // Theme toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle?.addEventListener('click', () => {
+          const current = document.documentElement.getAttribute('data-theme');
+          const next = current === 'light' ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
         });
       });
     </script>
   </head>
-  <body class="min-h-screen bg-dark-900 text-dark-100 font-sans antialiased selection:bg-primary-500/30">
+  <body class="min-h-screen font-sans antialiased" style="background-color: var(--bg); color: var(--text);">
     <Navbar />
     <main>
       <slot />
@@ -52,6 +72,6 @@ const { title = 'Gokul — Software Developer', description = 'Portfolio of Goku
 <style is:global>
   html {
     font-family: 'Inter', system-ui, sans-serif;
-    background-color: #111827;
+    background-color: var(--bg);
   }
 </style>

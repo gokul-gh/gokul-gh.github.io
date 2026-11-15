@@ -1,34 +1,40 @@
 ---
 const skills = [
-  { name: 'Java', category: 'languages', level: 90 },
-  { name: 'JavaScript', category: 'languages', level: 95 },
-  { name: 'TypeScript', category: 'languages', level: 85 },
-  { name: 'SQL', category: 'databases', level: 80 },
-  { name: 'Spring Boot', category: 'frameworks', level: 90 },
-  { name: 'React', category: 'frameworks', level: 95 },
-  { name: 'Ionic React', category: 'frameworks', level: 80 },
-  { name: 'PostgreSQL', category: 'databases', level: 75 },
-  { name: 'Docker', category: 'tools', level: 85 },
-  { name: 'Git/GitHub', category: 'tools', level: 90 },
-  { name: 'Postman', category: 'tools', level: 80 },
-  { name: 'Bash', category: 'languages', level: 70 },
+  { name: 'Java', icon: 'devicon-java-plain colored', category: 'Languages' },
+  { name: 'JavaScript', icon: 'devicon-javascript-plain colored', category: 'Languages' },
+  { name: 'TypeScript', icon: 'devicon-typescript-plain colored', category: 'Languages' },
+  { name: 'Spring Boot', icon: 'devicon-spring-plain colored', category: 'Frameworks' },
+  { name: 'React', icon: 'devicon-react-original colored', category: 'Frameworks' },
+  { name: 'Ionic React', icon: 'devicon-ionic-original colored', category: 'Frameworks' },
+  { name: 'SQL', icon: 'devicon-azuresqldatabase-plain colored', category: 'Databases' },
+  { name: 'PostgreSQL', icon: 'devicon-postgresql-plain colored', category: 'Databases' },
+  { name: 'Docker', icon: 'devicon-docker-plain colored', category: 'Tools' },
+  { name: 'Git/GitHub', icon: 'devicon-git-plain colored', category: 'Tools' },
+  { name: 'Postman', icon: 'devicon-postman-plain colored', category: 'Tools' },
+  { name: 'Bash', icon: 'devicon-bash-plain colored', category: 'Languages' },
 ];
+
+const categories = ['Languages', 'Frameworks', 'Databases', 'Tools'];
 ---
-<section id="skills" class="py-16 bg-dark-950">
+<section id="skills" class="py-16" style="background-color: var(--surface);">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-4xl font-bold text-white mb-12 text-center">My Skills</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-      {skills.map((skill) => (
-        <div class="bg-dark-800 border border-dark-700 rounded-lg px-4 py-3 text-dark-100 font-medium hover:border-primary-500/30 hover:bg-dark-700 transition-colors">
-          <div class="flex items-center justify-between mb-1">
-            <span>{skill.name}</span>
-            <span class="text-xs text-dark-400 ml-2">Level {skill.level}%</span>
-          </div>
-          <div class="w-full bg-dark-700 rounded-full h-1.5 overflow-hidden">
-            <div
-              class="bg-gradient-to-r from-primary-500 to-accent-500 h-1.5 rounded-full"
-              style={{ width: `${skill.level}%` }}
-            ></div>
+    <h2 class="text-4xl font-bold mb-4 text-center" style="color: var(--text);">My Skills</h2>
+    <p class="text-center mb-12 max-w-2xl mx-auto" style="color: var(--text-muted);">Technologies I work with on a daily basis</p>
+
+    <div class="space-y-10">
+      {categories.map((category) => (
+        <div>
+          <h3 class="text-lg font-semibold mb-4 uppercase tracking-wider" style="color: var(--text-muted);">{category}</h3>
+          <div class="flex flex-wrap gap-4">
+            {skills.filter((s) => s.category === category).map((skill) => (
+              <div
+                class="flex items-center gap-3 border rounded-xl px-5 py-3 min-w-[160px] transition-all duration-200 hover:opacity-80"
+                style="background-color: var(--bg); border-color: var(--border);"
+              >
+                <i class={`${skill.icon} text-3xl`} aria-hidden="true"></i>
+                <span class="text-sm font-medium" style="color: var(--text);">{skill.name}</span>
+              </div>
+            ))}
           </div>
         </div>
       ))}
