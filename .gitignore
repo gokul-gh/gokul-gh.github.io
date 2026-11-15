@@ -1,6 +1,23 @@
-.DS_Store
-.idea
-*.log
-tmp/
-
+# dependencies
 node_modules/
+.pnpm/
+
+# build
+dist/
+.astro/
+.env
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
+npm-debug.log*
+
+# misc
+tmp/
