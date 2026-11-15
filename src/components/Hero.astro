@@ -1,0 +1,57 @@
+---
+const name = 'Gokul';
+const tagline = 'Software Developer at Znifa Technologies';
+const summary = 'Dynamic Software Engineer with a proven track record at Znifa Technologies, specializing in Java and React. Expert in developing innovative software solutions and enhancing functionality through effective troubleshooting. Strong skills in HTML/CSS and version control, complemented by a commitment to code quality and collaboration.';
+---
+
+<section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16" style="background-color: var(--bg);">
+  <!-- Background decorative elements -->
+  <div class="absolute inset-0 -z-10">
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div class="text-center animate-fade-up">
+      <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-500/10 border border-primary-500/20 text-primary-400 text-sm font-medium mb-6">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
+        </span>
+        Currently open to opportunities
+      </span>
+
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6" style="color: var(--text);">
+        Hi, I'm <span class="gradient-text">{name}</span>
+      </h1>
+
+      <p class="text-xl sm:text-2xl font-medium mb-4" style="color: var(--text);">{tagline}</p>
+
+      <p class="max-w-3xl mx-auto text-lg leading-relaxed mb-10" style="color: var(--text-muted);">{summary}</p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/Gokul-Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-primary-600 hover:bg-primary-500 text-white font-semibold transition-all duration-200 hover:shadow-lg hover:shadow-primary-500/30"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          View Resume
+        </a>
+        <a
+          href="#projects"
+          class="inline-flex items-center gap-2 px-8 py-3 rounded-lg border font-semibold transition-all duration-200"
+          style="background-color: var(--surface); border-color: var(--border); color: var(--text);"
+        >
+          View Projects
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
